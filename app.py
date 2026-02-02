@@ -5,9 +5,11 @@ import shap
 import matplotlib.pyplot as plt
 
 # Load artifacts
-pipeline = pickle.load(open("model.pkl", "rb"))
-tfidf = pickle.load(open("vectorizer.pkl", "rb"))
-explainer = pickle.load(open("explainer.pkl", "rb"))
+import joblib
+
+pipeline = joblib.load("model.pkl")
+tfidf = joblib.load("vectorizer.pkl")
+explainer = joblib.load("explainer.pkl")
 
 THRESHOLD = 0.35   # tuned threshold
 
