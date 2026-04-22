@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
-import shap
+#import shap
 import matplotlib.pyplot as plt
 
 # -------------------------------
