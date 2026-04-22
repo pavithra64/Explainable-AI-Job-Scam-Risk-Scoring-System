@@ -9,7 +9,6 @@ import joblib
 
 pipeline = joblib.load("model.pkl")
 tfidf = joblib.load("vectorizer.pkl")
-explainer = joblib.load("explainer.pkl")
 
 THRESHOLD = 0.35   # tuned threshold
 
